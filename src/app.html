@@ -1,0 +1,61 @@
+<template>
+	<lightning-card class="card-style">
+		<div class="slds-m-around_medium" if:true={visible}>
+			<h1 class="slds-text-heading_large">
+				Dados Pessoais!
+			</h1>
+
+			<div class="slds-form-element">
+				<label class="slds-form-element__label" for="form-element-01">Nome</label>
+				<div class="slds-form-element__control">
+					<input type="text" id="form-element-01" placeholder={name} class="slds-input" />
+				</div>
+
+				<label class="slds-form-element__label" for="form-element-02">Telefone</label>
+				<div class="slds-form-element__control">
+					<input type="text" id="form-element-02" placeholder={phone}  class="slds-input" />
+				</div>
+
+				<label class="slds-form-element__label" for="form-element-03">CPF</label>
+				<div class="slds-form-element__control">
+					<input type="text" id="form-element-03" placeholder={cpf}  class="slds-input" />
+				</div>
+
+				<label class="slds-form-element__label" for="form-element-04">Idade</label>
+				<div class="slds-form-element__control">
+					<input type="text" id="form-element-04" placeholder={age}  class="slds-input" />
+				</div>
+			</div>
+		</div>
+
+		<div class="slds-m-around_medium " if:false={visible}>
+			<h1 class="slds-text-heading_large">
+				Redes Sociais!
+			</h1>
+
+			<div class="slds-form-element">
+				<label class="slds-form-element__label" for="form-element-05">Email</label>
+				<div class="slds-form-element__control">
+					<input type="text" id="form-element-05" placeholder={email} class="slds-input" />
+				</div>
+
+				<label class="slds-form-element__label" for="form-element-06">Instagram</label>
+				<div class="slds-form-element__control">
+					<input type="text" id="form-element-06" placeholder={instagram}  class="slds-input" />
+				</div>
+
+				<label class="slds-form-element__label" for="form-element-07">Twitter</label>
+				<div class="slds-form-element__control">
+					<input type="text" id="form-element-07" placeholder={twitter}  class="slds-input" />
+				</div>
+
+			</div>
+		</div>
+		<lightning-button variant="brand" label="Trocar dados" title="Change data" onclick={changeData}
+			class="slds-m-left_x-small"></lightning-button>
+
+
+	</lightning-card>
+
+
+</template>

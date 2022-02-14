@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/lanizia.questao1",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve 8xwsy3idvE9IOX7qUrMk --open"
+  }
+}
